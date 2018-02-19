@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    self.each {|word| word.end_with?("!") || self.end_with?("?") || self.end_with?(".") ? self : 0}
+    self.each {|word| word.end_with?("!") || self.end_with?("?") || self.end_with?(".") ? self.count : 0}
   end
 end
